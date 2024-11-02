@@ -1,4 +1,3 @@
-// src/components/Sidebar.jsx
 import React, { useContext, createContext, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import logo from '../assets/logo.png';
@@ -35,7 +34,6 @@ export default function Sidebar({ children }) {
   );
 }
 
-// SidebarItem Component
 export function SidebarItem({ icon, text, isActive, onClick, isDropdown = false, dropdownItems = [] }) {
   const { expanded } = useContext(SidebarContext);
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -71,7 +69,6 @@ export function SidebarItem({ icon, text, isActive, onClick, isDropdown = false,
         )}
       </div>
 
-      {/* Dropdown Items: Show even when collapsed */}
       {isDropdown && dropdownOpen && (
         <ul className="mt-2 ml-8 space-y-1">
           {dropdownItems.map((item, index) => (
