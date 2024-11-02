@@ -1,9 +1,8 @@
-import { FaBell, FaCog } from "react-icons/fa"; // Importing bell and settings icons
-import { format } from 'date-fns'; // For formatting the last login time
-
+import { FaBell, FaCog } from "react-icons/fa";
+import { format } from 'date-fns'; 
 export default function Header() {
-  const lastLoginTime = new Date(); // For demonstration, you can replace this with the actual login time
-  const formattedTime = format(lastLoginTime, 'hh:mm a, MMM d, yyyy'); // Format the date and time as needed
+  const lastLoginTime = new Date();
+  const formattedTime = format(lastLoginTime, 'hh:mm a, MMM d, yyyy'); 
 
   return (
     <nav className="flex justify-between items-center bg-white p-4">
@@ -21,7 +20,7 @@ export default function Header() {
           <button className="p-2 rounded-full hover:bg-gray-200 transition">
             <FaCog size={20} />
           </button>
-          <div className="w-px h-6 bg-gray-300 mx-4" /> {/* Vertical splitter */}
+          <div className="w-px h-6 bg-gray-300 mx-4" />
         </div>
       </div>
     </nav>

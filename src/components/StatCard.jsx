@@ -13,11 +13,11 @@ function StatCard({ icon: Icon, title, value, bgColor, progressBars = [], arrowC
               <span className="text-2xl font-bold">{value}</span>
             </div>
           </div>
-          <div className={arrowColor}> {/* Apply arrow color here */}
+          <div className={arrowColor}> 
             <FiArrowRight size={60} />
           </div>
         </div>
-        {/* Render progress bars if provided */}
+        
         {progressBars.length > 0 && (
           <div className="mt-5">
             {progressBars.map((bar, index) => (
